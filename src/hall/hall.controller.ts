@@ -32,7 +32,6 @@ export class HallController {
     @UseGuards(JwtAuthGuard, RolesGuard)
     @Role('AGENT')
     registerHall(@Request() req: any, @Body() hall: CreateHallDTO) {
-        console.log("user in controller", req.user);
         return this.hallService.createHall(req.user.id, hall);
     }
 
