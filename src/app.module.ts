@@ -5,9 +5,10 @@ import { HallModule } from './hall/hall.module';
 import { PrismaService } from './prisma/prisma.service';
 import { AuthModule } from './auth/auth.module';
 import { BookingModule } from './booking/booking.module';
+import { ReviewModule } from './review/review.module';
 
 @Module({
-  imports: [HallModule, AuthModule, BookingModule],
+  imports: [HallModule, AuthModule, BookingModule, ReviewModule],
   controllers: [AppController],
   providers: [AppService, PrismaService]
 })
