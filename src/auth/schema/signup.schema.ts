@@ -10,4 +10,4 @@ export const signupSchema = z
   })
   .required();
 
-export type CreateCatDto = z.infer<typeof signupSchema>;
+export type SignUpDTO = z.infer<typeof signupSchema>;

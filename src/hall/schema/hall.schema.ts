@@ -14,4 +14,4 @@ export const hallSchema = z
   })
   .required();
 
-export type CreateCatDto = z.infer<typeof hallSchema>;
+export type CreateHallDto = z.infer<typeof hallSchema>;

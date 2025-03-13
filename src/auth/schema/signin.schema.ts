@@ -8,4 +8,4 @@ export const signinSchema = z
   })
   .required();
 
-export type CreateCatDto = z.infer<typeof signinSchema>;
+export type SignInDTO = z.infer<typeof signinSchema>;
